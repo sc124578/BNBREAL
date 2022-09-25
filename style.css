@@ -1,5 +1,12 @@
 /* -------  General Styles ------- */
 
+html,body {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+  }
 
 body {
   font-family: "Lato", sans-serif;
@@ -178,6 +185,15 @@ footer p {
 /* -------  Media Query ------- */
 
 @media all and (min-width: 320px) {
+  
+  html,body {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+  }
+  
   header {
     display: flex;
     flex-direction: column;
@@ -228,6 +244,58 @@ footer p {
   }
   }
   
+
+@media all and (min-width: 480px) {
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    
+    }
+    .group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    main img {
+      width: 100%;
+    }
+    #about img {
+      width: 100%;
+      align-items: center;
+    }
+    #host img {
+      width: 100%;
+      align-items: center;
+    }
+    #host .group4 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 10px;
+      flex-wrap: wrap;
+    }
+    #ideas .group2 {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+    #ideas .group3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 10px;
+    }
+    #ideas img {
+      width: 100%;
+    }
+    }
+
   
             @media all and (min-width: 1024px) {
               .group {
