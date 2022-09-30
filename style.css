@@ -35,9 +35,7 @@ section.alternate-background {
   color: #fff;
 }
 
-main img {
-  width: 100%;
-}
+
 
 /* ---  Groups & Items --- */
 
@@ -57,9 +55,8 @@ main img {
 }
 
 #about img {
-  padding: 0px 0;
-  margin: 10px;
-  width: 350px;
+  padding: 10px 0 0 0;
+  width: 100px;
 }
 
 #about p {
@@ -69,6 +66,8 @@ main img {
 
 #ideas img {
   width: 500px;
+  padding: 0px 0;
+  margin: 10px;
 }
 
 #ideas .group2 {
@@ -88,12 +87,11 @@ main img {
 
 #host .group4 {
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
 #host img {
-  width: 650px;
+ 
 }
 
 
@@ -189,33 +187,17 @@ footer p {
     margin: 0px;
     overflow-x: hidden;
   }
-  
   header {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  form {
-    display: flex;
-    flex-direction: column;
-    
   }
   
-  .group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  main img {
-    width: 100%;
-  }
-  #about img {
-    width: 100%;
-    align-items: center;
-  }
- 
-  #stay .label1 {
+  
+form {
+  display: flex;
+  flex-direction: column;
+}
+#stay .label1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -245,150 +227,120 @@ footer p {
   padding-left: 0px;
   width: 100%;
 }
-  #host img {
-    width: 100%;
-    align-items: center;
-  }
-  #host .group4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 10px;
-    flex-wrap: wrap;
-  }
-  #ideas .group2 {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  }
-  #ideas .group3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 10px;
-  }
-  #ideas img {
-    width: 100%;
-  }
-  }
-  
-  @media all and (min-width: 480px) {
-      .group {
-      display: flex;
-      flex-direction: row;
-    }
-    #stay .label1 {
-      display: flex;
-      flex-direction: column;
-      padding: 0px;
-    }
-    #stay .label2 {
-      display: flex;
-      flex-direction: column;
-      padding: 0px;
-    }
-    #stay .label3 {
-      display: flex;
-      flex-direction: column;
-      padding: 0px;
-    }
-    #stay .label4 {
-      display: flex;
-      flex-direction: column;
-      padding: 0px;
-    }
-    .item {
-      flex: 1;
-      margin: 10px;
-      padding: 60px 0;
-    }
-    
-    .item-double {
-      flex: 2;
-    }
-    
-    #about img {
-      padding: 0px 0;
-      margin: 10px;
-      width: 350px;
-    }
-    
-    #about p {
-      padding: 20px 0;
-    }
-    
-    
-    #ideas img {
-      width: 500px;
-    }
-    
-    #ideas .group2 {
-      display: flex;
-      justify-content: space-evenly;
-      padding: 20px 0;
-      flex-direction: row;
-      
-    }
-    
-    #ideas .group3 {
-      display: flex;
-      justify-content: space-evenly;
-      padding: 20px 0;
-      flex-direction: row;
-    }
-    
-    #host .group4 {
-      display: flex;
-      flex-direction: row;
-      padding: 20px 0;
-      justify-content: space-between;
-  flex-wrap: wrap;
-    }
-    
-    #host img {
-      width: 100%;
-  }
-  form {
-    display: flex;
-    border: 2px solid #ff385c;
-    padding: 10px;
-    justify-content: space-between;
-    flex-direction: row;
-  }
-  
-  
-  form label {
-    display: flex;
-    font-weight: bold;
-    flex: row;
-  }
-  
-  form select, 
-  form input {
-    display: flex;
-    margin-bottom: 20px;
-    width: 180px;
-    flex-direction: row;
-  }
-  
-  form button {
-    display: flex;
-    background-color: #ff385c;
-    border: none;
-    color: #fff;
-    font-size: 24px;
-    padding: 15px;
-    width: 100%;
-    flex-direction: row;
-  }
-  header {
-    display: flex;
-    background-color: #ff385c;
-    padding: 20px 20px 0 20px;
-    text-align: center;
-    justify-content: space-between;
-    flex-direction: row;
-  }
+#about .group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#about img {
+  width: 100%;
+}
+#ideas .group2 {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+#ideas .group3 {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+#ideas img {
+  width: 100%;
+}
+#host img {
+  width: 100%;
+}
+#host .group4 {
+  margin-top: -60px;
+}
+#host img {
+  margin-top: -60px;
+}
 
+}
+@media all and (min-width: 480px) {
+  html,body {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+form {
+  display: flex;
+  flex-direction: row;
+}
+#stay .label1 {
+  display: flex;
+  flex-direction: column;
+    padding: 5px;
+    width: 100%;
+}
+#stay .label2 {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  width: 100%;
+}
+#stay .label3 {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  width: 100%;
+}
+#stay .label4 {
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+  width: 100%;
+}
+#stay .submitbutton {
+  display: flex;
+  flex-direction: column;
+}
+#stay .insidebutton {
+  padding-left: 0px;
+  width: 100%;
+}
+#about img {
+  width: 100%;
+  width: 400px;
+  padding: 10px;
+}
+
+#about .group {
+  display: flex;
+  flex-direction: row;
+}
+#ideas img {
+  width: 100%;
+  width: 800px;
+  padding: 0px 0;
+  margin: 10px;
+}
+#ideas .group2 {
+  display: flex;
+  flex-direction: row;
+}
+#ideas .group3 {
+  display: flex;
+  flex-direction: row;
+}
+#host img {
+  width: 100%;
+  width: 500px;
+  padding: 150px 0 0 0;
   
+}
+#host .group4 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap
+}
 }
